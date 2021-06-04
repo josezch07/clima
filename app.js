@@ -36,6 +36,26 @@ function updateImage(data) {
   }
 
 
+  function datee(){
+
+         
+    let dia = new Date().getDate(),
+   month = new Date().getMonth() + 1,
+    year = new Date().getFullYear()
+   
+    if(dia < 10){
+        dia = "0"+ dia
+        
+   }if(month < 10){
+        month = "0" + month
+   }
+       
+   return `${dia}/${month}/${year}`
+   }
+ 
+ 
+   date.innerHTML = datee()
+   city.innerHTML = `Santa Cruz, CR`
 
 
 
