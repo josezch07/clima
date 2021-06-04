@@ -66,9 +66,9 @@ async function search(query){
          console.log(data);
          city.innerHTML = `${data.name}, ${data.sys.country}`;
          data.date = new Date().toLocaleDateString();
-         temp.innerHTML = `${toCelcius(data.main.temp)}c`;
+         temp.innerHTML = `${toCelcius(data.main.temp)}°`;
          weather.innerHTML = data.weather[0].description;
-         range.innerHTML = `${toCelcius(data.main.temp_min)}c / ${toCelcius(data.main.temp_max)}c`
+         range.innerHTML = `${toCelcius(data.main.temp_min)}° / ${toCelcius(data.main.temp_max)}°`
          updateImage(data)
          updateVideo(data)
 
